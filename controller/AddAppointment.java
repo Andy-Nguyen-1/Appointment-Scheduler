@@ -94,7 +94,7 @@ public class AddAppointment implements Initializable {
     }
 
     /**
-     * Save appointment function, checks to make sure no fields are null, and adds appointment to the database
+     * Save appointment function, and adds appointment to the database
      * @param actionEvent
      * @throws SQLException
      * @throws IOException
