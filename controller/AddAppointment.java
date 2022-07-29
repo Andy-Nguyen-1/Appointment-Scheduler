@@ -77,7 +77,8 @@ public class AddAppointment implements Initializable {
         // Load data into time combo
         startTimeCombo.setItems(timeSlots());
         endTimeCombo.setItems(timeSlots());
-
+        
+        // Lamda Expression used to grey out dates in the past.
         startDatePicker.setDayCellFactory(picker -> new DateCell() {
             @Override
             public void updateItem(LocalDate date, boolean empty) {
@@ -171,55 +172,6 @@ public class AddAppointment implements Initializable {
     }
 
 
-    public boolean verifyAppt(TextField apptTitleTextField, TextArea apptDescTextArea, TextField locationTextField, ComboBox typeTextField,
-                              TextField contactComboBox, ComboBox startDatePicker, DatePicker startTimeCombo, ComboBox endTimeCombo,
-                              ComboBox apptCustIDCombo, ComboBox userIDComboBox){
-
-        if (apptTitleTextField == null) {
-            messageLabel.setText("Please enter appointment title");
-            return true;
-        }
-        if (apptDescTextArea == null) {
-            messageLabel.setText("Please enter appointment description");
-            return true;
-        }
-        if (locationTextField == null) {
-            messageLabel.setText("Please enter a location");
-            return true;
-        }
-        if (typeTextField == null){
-            messageLabel.setText("Please enter a type");
-            return true;
-        }
-        if (contactComboBox == null) {
-            messageLabel.setText("Please select a contact");
-            return true;
-        }
-        if (startDatePicker == null) {
-            messageLabel.setText("Please select a start date");
-            return true;
-        }
-        if (startTimeCombo == null) {
-            messageLabel.setText("Please select a start time");
-            return true;
-        }
-        if(endTimeCombo == null){
-            messageLabel.setText("Please select an end time");
-            return true;
-        }
-        if (apptCustIDCombo == null){
-            messageLabel.setText("Please select customer ID");
-            return true;
-        }
-        if (userIDComboBox == null){
-            messageLabel.setText("Please select a user ID");
-            return true;
-        }
-        else{
-            return false;
-        }
-
-    }
 
     /**
      * Function to load data to the Contact combo box.
