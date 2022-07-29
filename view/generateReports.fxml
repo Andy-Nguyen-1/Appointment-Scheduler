@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="607.0" prefWidth="1146.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.GenerateReports">
+    <children>
+        <Text layoutX="14.0" layoutY="45.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Generate Report">
+            <font>
+                <Font name="System Bold" size="29.0" />
+            </font>
+        </Text>
+        <Button fx:id="backToMain" layoutX="14.0" layoutY="568.0" mnemonicParsing="false" onAction="#backToMain" text="Back" />
+      <Button layoutX="14.0" layoutY="154.0" lineSpacing="1.0" mnemonicParsing="false" onAction="#generateReport1" prefHeight="48.0" prefWidth="322.0" text="Total number of appointments by type and month" />
+      <TextArea fx:id="showReport" layoutX="428.0" layoutY="33.0" prefHeight="532.0" prefWidth="689.0" />
+        <Label fx:id="messageLabel" layoutX="14.0" layoutY="485.0" prefHeight="48.0" prefWidth="404.0" textFill="RED">
+            <font>
+                <Font size="19.0" />
+            </font>
+        </Label>
+      <Button layoutX="14.0" layoutY="233.0" mnemonicParsing="false" onAction="#generateReport2" prefHeight="48.0" prefWidth="322.0" text="Contact Schedules" />
+      <Button layoutX="14.0" layoutY="314.0" mnemonicParsing="false" onAction="#generateReport3" prefHeight="48.0" prefWidth="322.0" text="Total Customers By Country" />
+    </children>
+</AnchorPane>

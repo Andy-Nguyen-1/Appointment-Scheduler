@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.logIn_Form">
+   <children>
+       <AnchorPane layoutX="13.0" layoutY="113.0" prefHeight="270.0" prefWidth="572.0" style="-fx-border-radius: 10; -fx-border-color: black;">
+           <children>
+               <TextField fx:id="usernameTextField" layoutX="247.0" layoutY="66.0" promptText="Username" />
+               <Label fx:id="usernameLabel" layoutX="130.0" layoutY="68.0" prefHeight="21.0" prefWidth="114.0" text="Username:">
+                   <font>
+                       <Font size="15.0" />
+                   </font>
+               </Label>
+               <Label fx:id="passwordLabel" layoutX="130.0" layoutY="98.0" prefHeight="21.0" prefWidth="114.0" text="Password:">
+                   <font>
+                       <Font size="15.0" />
+                   </font>
+               </Label>
+               <Button fx:id="logInBtn" layoutX="267.0" layoutY="160.0" mnemonicParsing="false" onAction="#checkLogIn" prefHeight="25.0" prefWidth="53.0" text="Log In" />
+               <Label fx:id="logInError" layoutX="162.0" layoutY="135.0" prefHeight="17.0" prefWidth="284.0" textFill="RED" />
+               <Label fx:id="userLocationLabel" layoutX="14.0" layoutY="229.0" prefHeight="21.0" prefWidth="149.0" text="User Location:">
+                   <font>
+                       <Font size="15.0" />
+                   </font>
+               </Label>
+               <Label fx:id="currLocation" layoutX="162.0" layoutY="227.0" prefHeight="25.0" prefWidth="78.0">
+                   <font>
+                       <Font size="15.0" />
+                   </font>
+               </Label>
+               <Button fx:id="exitBtn" layoutX="268.0" layoutY="193.0" mnemonicParsing="false" onAction="#exit" prefHeight="21.0" prefWidth="53.0" text="Exit" />
+            <Label fx:id="userTimeZoneLabel" layoutX="240.0" layoutY="229.0" prefHeight="21.0" prefWidth="166.0" text="User Time Zone:">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="currTimeZone" layoutX="408.0" layoutY="227.0" prefHeight="25.0" prefWidth="166.0">
+               <font>
+                  <Font size="16.0" />
+               </font></Label>
+            <TextField fx:id="passwordTextField" layoutX="246.0" layoutY="96.0" promptText="Password" />
+            <Label fx:id="signInLabel" layoutX="258.0" layoutY="14.0" text="Sign In">
+               <font>
+                  <Font name="System Bold" size="22.0" />
+               </font>
+            </Label>
+           </children>
+       </AnchorPane>
+      <Label fx:id="welcomeMessageLabel" layoutX="13.0" layoutY="35.0" prefHeight="58.0" prefWidth="576.0" text="Welcome to the WGU Appointment System!">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

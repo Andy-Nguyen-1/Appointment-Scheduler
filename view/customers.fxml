@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="607.0" prefWidth="1146.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Customers">
+    <children>
+        <Label layoutX="14.0" layoutY="14.0" prefHeight="43.0" prefWidth="158.0" text="Customers">
+            <font>
+                <Font name="System Bold" size="29.0" />
+            </font>
+        </Label>
+        <TableView fx:id="customerTable" layoutX="14.0" layoutY="84.0" prefHeight="440.0" prefWidth="1108.0">
+            <columns>
+                <TableColumn fx:id="customerIDCol" prefWidth="91.0" text="Customer ID" />
+                <TableColumn fx:id="customerNameCol" prefWidth="221.0" text="Name" />
+                <TableColumn fx:id="customerAddressCol" prefWidth="274.0" text="Address" />
+                <TableColumn fx:id="customerDivisionIDCol" prefWidth="120.0" text="State/Territory" />
+                <TableColumn fx:id="customerPostalCodeCol" prefWidth="125.0" text="Postal Code" />
+            <TableColumn fx:id="customerCountryCol" prefWidth="106.0" text="Country" />
+                <TableColumn fx:id="customerPhoneCol" prefWidth="170.0" text="Phone" />
+            </columns>
+        </TableView>
+        <Button fx:id="addCustomerBtn" layoutX="14.0" layoutY="528.0" mnemonicParsing="false" onAction="#newCustomer" text="Add Customer" />
+        <Button fx:id="updateCustomerBtn" layoutX="120.0" layoutY="528.0" mnemonicParsing="false" onAction="#updateCustomer" text="Update Customer" />
+        <Button fx:id="deleteCustomerBtn" layoutX="241.0" layoutY="528.0" mnemonicParsing="false" onAction="#deleteCustomer" text="Delete Customer" />
+        <Button fx:id="backBtn" layoutX="14.0" layoutY="568.0" mnemonicParsing="false" onAction="#back" text="Back" />
+      <Label fx:id="messageLabel" layoutX="269.0" layoutY="560.0" prefHeight="30.0" prefWidth="611.0" textFill="#ff0909">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+    </children>
+</AnchorPane>
